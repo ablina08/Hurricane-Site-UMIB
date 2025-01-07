@@ -140,9 +140,7 @@ body {
         .ash-footer-col{
             width: 100%;
         }
-    }
-    
-    
+    }  
     /* Footer Styles */
     footer {
         background: #222;
@@ -183,7 +181,7 @@ body {
         border-radius: 0;
         padding: 10px;
        }
-body {
+       body {
         background: #5289ff;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         display: flex;
@@ -193,7 +191,8 @@ body {
         margin: 0;
     }
     
-    #weather-container {
+    #weather-container,
+    .ash-weather {
         background: rgba(255, 255, 255, 0.3);
         max-width: 400px;
         padding: 40px;
@@ -204,12 +203,14 @@ body {
         text-align: center;
     }
     
-    h2, label, p {
+    .ash-weather h2, 
+    .ash-weather label, 
+    .ash-weather p {
         color: #fff;
         margin: 9px 0;
     }
     
-    input {
+    .ash-weather input {
         width: calc(100% - 16px);
         padding: 15px;
         box-sizing: border-box;
@@ -218,7 +219,7 @@ body {
         margin-top: 20px;
     }
     
-    button {
+    .ash-weather button {
         background: #debff4;
         color: white;
         padding: 10px;
@@ -230,20 +231,20 @@ body {
         font-size: 15px;
     }
     
-    button:hover {
+    .ash-weather button:hover {
         background: #4cbfe2;
     }
     
-    #temp-div p {
+    .ash-weather #temp-div p {
         font-size: 70px;
         margin-top: -30px;
     }
     
-    #weather-info {
+    .ash-weather #weather-info {
         font-size: 20px;
     }
     
-    #weather-icon {
+    .ash-weather #weather-icon {
         width: 3%;
         height: 300px;
         margin: 0 auto 10px; 
@@ -251,7 +252,7 @@ body {
         display: none;
     }
     
-    #hourly-forecast {
+    .ash-weather #hourly-forecast {
         margin-top: 50px;
         overflow-x: auto;
         white-space: nowrap;
@@ -259,7 +260,7 @@ body {
         justify-content: space-between;
     }
     
-    .hourly-item {
+    .ash-weather .hourly-item {
         flex: 0 0 auto;
         width: 80px;
         display: flex;
@@ -269,13 +270,14 @@ body {
         color: white;
     }
     
-    .hourly-item img {
+    .ash-weather .hourly-item img {
         width: 30px;
         height: 30px;
         margin-bottom: 5px;
     }
     
-    #hourly-heading {
+    .ash-weather #hourly-heading {
         color: #fff;
         margin-top: 10px;
     }
+    
