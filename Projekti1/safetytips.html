@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hurricane Safety Tips</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="safetytips.css">
+    <script src="sf.js"></script>
 </head>
 <body>
     <header>
@@ -34,55 +35,71 @@
         <div class="container">
             <h2>Hurricane Safety Tips</h2>
             <div class="tips">
-                <div class="tip">
+                <div class="tip" onclick="showImage(0)">
                     <h3>1. Know Your Risks</h3>
                     <p>Identify if you live in a hurricane-prone area and understand the possible hazards in your region, such as storm surge or flooding.</p>
+                    <img src="https://i.ytimg.com/vi/GZX5EgqqCwA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDYb1bBrOO-ymKqJBX3Zx4lTAvKKQ.jpg" alt="Know Your Risks" class="tip-image">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/GZX5EgqqCwA" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <div class="tip">
+                <div class="tip" onclick="showImage(1)">
                     <h3>2. Create a Plan</h3>
                     <p>Develop an emergency plan with evacuation routes, designated safe areas, and a communication plan for your family.</p>
+                    <img src="https://via.placeholder.com/400x200?text=Create+a+Plan" alt="Create a Plan" class="tip-image">
                 </div>
-                <div class="tip">
+                <div class="tip" onclick="showImage(2)">
                     <h3>3. Prepare an Emergency Kit</h3>
                     <p>Gather essential supplies such as water, non-perishable food, medications, a flashlight, batteries, and first-aid kits.</p>
+                    <img src="https://via.placeholder.com/400x200?text=Prepare+an+Emergency+Kit" alt="Prepare an Emergency Kit" class="tip-image">
                 </div>
-                <div class="tip">
+                <div class="tip" onclick="showImage(3)">
                     <h3>4. Secure Your Home</h3>
                     <p>Ensure your home is well-prepared by installing shutters, securing doors and windows, and removing outdoor items that could become projectiles.</p>
+                    <img src="https://via.placeholder.com/400x200?text=Secure+Your+Home" alt="Secure Your Home" class="tip-image">
                 </div>
-                <div class="tip">
+                <div class="tip" onclick="showImage(4)">
                     <h3>5. Stay Informed</h3>
                     <p>Monitor weather updates and alerts from trusted sources. Stay connected with local authorities and emergency services.</p>
+                    <img src="https://via.placeholder.com/400x200?text=Stay+Informed" alt="Stay Informed" class="tip-image">
                 </div>
-                <div class="tip">
+                <!-- Additional Boxes -->
+                <div class="tip" onclick="showImage(5)">
                     <h3>6. Evacuate if Necessary</h3>
                     <p>If authorities issue an evacuation order, leave early and follow the recommended evacuation routes to avoid getting stuck in traffic.</p>
+                    <img src="https://via.placeholder.com/400x200?text=Evacuate+if+Necessary" alt="Evacuate if Necessary" class="tip-image">
+                </div>
+                <div class="tip" onclick="showImage(6)">
+                    <h3>7. Protect Your Vehicle</h3>
+                    <p>Move your vehicle to higher ground if possible and ensure it's fueled in case evacuation is necessary.</p>
+                    <img src="https://via.placeholder.com/400x200?text=Protect+Your+Vehicle" alt="Protect Your Vehicle" class="tip-image">
+                </div>
+                <div class="tip" onclick="showImage(7)">
+                    <h3>8. Prepare Your Pets</h3>
+                    <p>Ensure that you have enough food, water, and medications for your pets. Have a plan for evacuating them as well.</p>
+                    <img src="https://via.placeholder.com/400x200?text=Prepare+Your+Pets" alt="Prepare Your Pets" class="tip-image">
+                </div>
+                <div class="tip" onclick="showImage(8)">
+                    <h3>9. Check Insurance Coverage</h3>
+                    <p>Review your insurance policy to ensure you're covered for hurricane-related damages, especially flooding.</p>
+                    <img src="https://via.placeholder.com/400x200?text=Check+Insurance" alt="Check Insurance Coverage" class="tip-image">
+                </div>
+                <div class="tip" onclick="showImage(9)">
+                    <h3>10. Avoid Flooded Areas</h3>
+                    <p>Avoid walking or driving through flooded areas. Even shallow water can sweep you away or damage your vehicle.</p>
+                    <img src="https://via.placeholder.com/400x200?text=Avoid+Flooded+Areas" alt="Avoid Flooded Areas" class="tip-image">
+                </div>
+                <div class="tip" onclick="showImage(10)">
+                    <h3>11. Stock up on Gas</h3>
+                    <p>Make sure your vehicle and any portable generators are filled with gas. Gas stations may be closed or have long lines during and after the storm.</p>
+                    <img src="https://via.placeholder.com/400x200?text=Stock+up+on+Gas" alt="Stock up on Gas" class="tip-image">
+                </div>
+                <div class="tip" onclick="showImage(11)">
+                    <h3>12. Strengthen Your Roof</h3>
+                    <p>Consider reinforcing your roof if you live in an area with frequent hurricanes. Use hurricane straps to secure the roof to the walls and foundation.</p>
+                    <img src="https://via.placeholder.com/400x200?text=Strengthen+Your+Roof" alt="Strengthen Your Roof" class="tip-image">
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="during-storm">
-        <div class="container">
-            <h2>During the Storm</h2>
-            <p>Take immediate safety measures to protect yourself and your loved ones during the storm.</p>
-            <ul>
-                <li>Stay indoors and away from windows.</li>
-                <li>Listen to weather updates and emergency alerts.</li>
-                <li>Ensure your emergency kit is accessible and ready.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="after-storm">
-        <div class="container">
-            <h2>After the Storm</h2>
-            <p>Once the storm has passed, carefully assess the situation and ensure your safety before taking action.</p>
-            <ul>
-                <li>Check your property for damage, especially if there’s flooding.</li>
-                <li>Never enter flooded areas or downed power lines.</li>
-                <li>Help neighbors who may need assistance, especially the elderly or disabled.</li>
-            </ul>
         </div>
     </section>
 
@@ -91,5 +108,9 @@
             <p>&copy; 2025 Hurricane Safety Tips. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
+
