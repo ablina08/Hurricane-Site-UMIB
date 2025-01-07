@@ -52,32 +52,37 @@ body {
         margin-right: 5px; /* Adjust the value as needed */
     }
     
-    footer{
+    footer {
         display: flex;
         flex-wrap: wrap;
         margin-top: auto;
-        background-color: #2d2e33;
+        background-color: #2d2e33; /* Professional dark background */
+        color: white;
         padding: 60px 10%;
+        width: 100%;
+        box-sizing: border-box; /* Ensures padding doesn't add extra width */
     }
     
-    ul{
+    ul {
         list-style: none;
+        padding: 0; /* Remove default padding for list */
     }
     
-    .ash-footer-col{
-        width: 25%;
+    .ash-footer-col {
+        width: 25%; /* Four columns for desktop view */
+        margin-bottom: 20px;
     }
     
-    .ash-footer-col h4{
+    .ash-footer-col h4 {
         position: relative;
-        margin-bottom: 30px;
-        font-weight: 400;
+        margin-bottom: 20px;
+        font-weight: 500;
         font-size: 22px;
-        color: #f1bc0d;
+        color: #f1bc0d; /* Highlighted title color */
         text-transform: capitalize;
     }
     
-    .ash-footer-col h4::before{
+    .ash-footer-col h4::before {
         content: '';
         position: absolute;
         left: 0;
@@ -87,66 +92,72 @@ body {
         width: 40px;
     }
     
-    ul li:not(:last-child){
+    ul li:not(:last-child) {
         margin-bottom: 8px;
     }
     
-    ul li a{
+    ul li a {
         display: block;
         font-size: 19px;
         text-transform: capitalize;
         color: #bdb6b6;
         text-decoration: none;
-        transition: 0.4s;
+        transition: 0.3s ease-in-out;
     }
     
-    ul li a:hover{
+    ul li a:hover {
         color: white;
-        padding-left: 2px;
+        padding-left: 5px; /* Add subtle hover effect */
     }
     
-    .links a{
+    .links a {
         display: inline-block;
         height: 44px;
         width: 44px;
         color: white;
-        background-color: rgba(40, 130, 214, 0.8);
+        background-color: rgba(40, 130, 214, 0.8); /* Stylish button background */
         margin: 0 8px 8px 0;
         text-align: center;
         line-height: 44px;
-        border-radius: 50%;
-        transition: 0.4s;
+        border-radius: 50%; /* Circular buttons */
+        transition: 0.3s ease-in-out;
     }
     
-    .links a:hover{
+    .links a:hover {
         color: #4d4f55;
         background-color: white;
     }
     
-    @media(max-width: 740px){
-        .ash-footer-col{
+    footer .ash-mt-3 {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 740px) {
+        .ash-footer-col {
             width: 50%;
             margin-bottom: 30px;
             text-align: center;
         }
     
-        .ash-footer-col h4::before{
-            all: unset;
+        .ash-footer-col h4::before {
+            all: unset; /* Remove the line under the title on small screens */
         }
     }
     
-    @media(max-width: 555px){
-        .ash-footer-col{
-            width: 100%;
+    @media (max-width: 555px) {
+        .ash-footer-col {
+            width: 100%; /* Full width for each column on small screens */
         }
     }
-    
-    
     /* Footer Styles */
     footer {
         background: #222;
         color: white;
-        padding: 1rem 0;
+        padding: 1rem o;
         text-align: center;
     }
    
