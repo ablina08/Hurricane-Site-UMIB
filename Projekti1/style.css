@@ -1,57 +1,37 @@
-/* General Styles */
-body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-    
-    header {
-        background: #f4f4f4;
-        padding: 2rem;
-        text-align: center;
-        border-bottom: 2px solid #ddd;
-    }
-    
-    h1 {
-        margin: 0;
-        font-size: 3.5rem;
-        font-style: oblique;
-        color: cadetblue;
-        margin-top: 60px;
-    }
-    
-    .navbar {
-        margin-bottom: 2rem;
+/* General styles for navbar */
+.navbar {
+    padding: 0.5rem 1rem;
+}
 
-    }
-  
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-        line-height: 1.2;
-    }
-    
-    body{
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        background-color: #bbbbbb;
-    }
-    .navbar .form-inline {
-        margin-left: 70px; /* Pushes the form to the right */
-        padding-left: 10px;
-        display: flex; /* Ensures proper alignment */
-        align-items: center; /* Vertically aligns input and button */
-    }
-    .navbar .form-control {
-        margin-right: 5px; /* Adds spacing between the input and the button */
-    }
-    .navbar-nav .nav-item {
-        margin-right: 5px; /* Adjust the value as needed */
-    }
-    
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-link {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.nav-link i {
+    font-size: 1.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
     footer {
         display: flex;
         flex-wrap: wrap;
@@ -77,7 +57,7 @@ body {
         position: relative;
         margin-bottom: 20px;
         font-weight: 500;
-        font-size: 22px;
+        font-size: 26px;
         color: #f1bc0d; /* Highlighted title color */
         text-transform: capitalize;
     }
@@ -98,7 +78,7 @@ body {
     
     ul li a {
         display: block;
-        font-size: 19px;
+        font-size: 25px;
         text-transform: capitalize;
         color: #bdb6b6;
         text-decoration: none;

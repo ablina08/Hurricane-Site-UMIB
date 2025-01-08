@@ -1,3 +1,4 @@
+
 .carousel {
         position: relative;
         width: 100%;
@@ -56,3 +57,35 @@
         }
     }
     
+/* General styles for navbar */
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-link {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.nav-link i {
+    font-size: 1.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

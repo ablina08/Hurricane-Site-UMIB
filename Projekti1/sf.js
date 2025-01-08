@@ -3,4 +3,5 @@ function showImage(index) {
         // Toggle the active class for the clicked tip
         tips[index].classList.toggle('active');
     }
+
     
