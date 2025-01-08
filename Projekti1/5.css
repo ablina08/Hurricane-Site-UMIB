@@ -7,17 +7,18 @@ body {
     
     header {
         background: #f4f4f4;
-        padding: 2rem;
+        padding-bottom: 50px;
         text-align: center;
-        border-bottom: 2px solid #ddd;
     }
     
     h1 {
         margin: 0;
-        font-size: 3.5rem;
+        margin-top: 60px;
+        font-size: 3.2rem;
         font-style: oblique;
         color: cadetblue;
-        margin-top: 60px;
+        padding-top: 10px;
+
     }
     
     .navbar {
@@ -73,7 +74,7 @@ body {
         position: relative;
         margin-bottom: 30px;
         font-weight: 400;
-        font-size: 22px;
+        font-size: 26px;
         color: #f1bc0d;
         text-transform: capitalize;
     }
@@ -94,7 +95,7 @@ body {
     
     ul li a{
         display: block;
-        font-size: 19px;
+        font-size: 25px;
         text-transform: capitalize;
         color: #bdb6b6;
         text-decoration: none;
@@ -195,7 +196,8 @@ body {
     .ash-weather {
         background: rgba(255, 255, 255, 0.3);
         max-width: 400px;
-        padding: 40px;
+        padding: 100px;
+        margin-bottom: 180px;
         border-radius: 15px;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(10px);
