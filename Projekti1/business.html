@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="business.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -20,16 +20,66 @@
     <h1>Business</h1>
 </header>
 
-<main>
-    <section>
-        <h2>Our Business</h2>
-        <p>We provide services that help businesses prepare for hurricanes and disasters. Our solutions are tailored to protect both small and large businesses.</p>
-    </section>
-    <section>
-        <h2>Our Partners</h2>
-        <p>We collaborate with leading tech companies and government agencies to deliver timely and reliable information to our clients.</p>
-    </section>
+<main class="ash-main">
+    <div class="container">
+        <!-- About Section -->
+        <section class="ash-section">
+            <h2 class="ash-section-title">Our Business</h2>
+            <p class="ash-text">We provide comprehensive services to help businesses prepare for hurricanes and natural disasters. From evacuation planning to data recovery, our solutions ensure your business can withstand any storm.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="ash-section">
+            <h2 class="ash-section-title">Our Services</h2>
+            <div class="row ash-services">
+                <div class="col-md-4 ash-service-card">
+                    <div class="ash-service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="ash-service-title">Emergency Planning</h3>
+                    <p class="ash-text">Develop a tailored emergency response plan for your business, ensuring your staff and assets are protected.</p>
+                </div>
+                <div class="col-md-4 ash-service-card">
+                    <div class="ash-service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="ash-service-title">Data Protection</h3>
+                    <p class="ash-text">Implement data backup solutions to secure your critical business information during disaster events.</p>
+                </div>
+                <div class="col-md-4 ash-service-card">
+                    <div class="ash-service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="ash-service-title">Business Continuity</h3>
+                    <p class="ash-text">Ensure your business can resume operations quickly with our business continuity planning services.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="ash-section ash-testimonials">
+            <h2 class="ash-section-title">What Our Clients Say</h2>
+            <div class="ash-testimonials-container">
+                <div class="ash-testimonial-card">
+                    <p class="ash-testimonial-text">"Thanks to Hurricane Awareness, we were fully prepared for the storm. Their emergency planning and data protection services kept our business running smoothly during the crisis."</p>
+                    <p class="ash-testimonial-author">- Jane Doe, CEO of Tech Corp</p>
+                </div>
+                <div class="ash-testimonial-card">
+                    <p class="ash-testimonial-text">"The team at Hurricane Awareness provided the perfect business continuity plan for us. We couldn't have asked for better support during the hurricane season."</p>
+                    <p class="ash-testimonial-author">- John Smith, Operations Manager at Retail World</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="ash-section ash-cta">
+            <h2 class="ash-cta-title">Ready to Protect Your Business?</h2>
+            <p class="ash-cta-text">Contact us today to learn more about how we can help you prepare for the unexpected.</p>
+            <a href="contactus.html" class="ash-btn ash-btn-primary">Get in Touch</a>
+        </section>
+    </div>
 </main>
+
 
 <footer>
     <div class="ash-footer-col">
@@ -61,10 +111,10 @@
     <div class="ash-footer-col">
         <h4>follow us</h4>
         <div class="links">
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" data-platform="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com" data-platform="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" data-platform="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" data-platform="instagram"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
     <div class="ash-mt-3">
