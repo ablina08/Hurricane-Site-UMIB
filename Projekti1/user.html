@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Hurricane Awareness</title>
+    <link rel="stylesheet" href="user.css">
+    <script src="user.js" defer></script>
+</head>
+<body>
+    <div class="ash-container">
+        <h1 class="ash-heading">Hurricane Awareness Sign In</h1>
+        <p class="ash-paragraph">Please sign in to get notifications the hurricane awareness resources and alerts.</p>
+        <form id="ash-signin-form">
+            <div class="ash-input-group">
+                <label for="username" class="ash-label">Username</label>
+                <input type="text" id="username" name="username" class="ash-input" required>
+            </div>
+            <div class="ash-input-group">
+                <label for="password" class="ash-label">Password</label>
+                <input type="password" id="password" name="password" class="ash-input" required>
+            </div>
+            <div class="ash-input-group">
+                <label for="remember" class="ash-label">Remember Me</label>
+                <input type="checkbox" id="remember" name="remember" class="ash-checkbox">
+            </div>
+            <button type="submit" class="ash-button">Sign In</button>
+        </form>
+        <div id="ash-response-message" class="ash-response-message"></div>
+    </div>
+</body>
+</html>
