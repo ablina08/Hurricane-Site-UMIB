@@ -62,3 +62,24 @@ const productData = {
             cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
         }
 });
+
+// Wait for the DOM to load
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the elements
+    const checkoutBtn = document.getElementById('checkoutBtn');
+    const successMessage = document.getElementById('successMessage');
+
+    // Initially hide the success message
+    successMessage.style.display = 'none';
+
+    // Event listener for the "Proceed to Checkout" button
+    checkoutBtn.addEventListener('click', function () {
+        // Show the success message when the button is clicked
+        successMessage.style.display = 'block';
+
+        // Optionally, you can hide the message after a few seconds (e.g., 5 seconds)
+        setTimeout(function () {
+            successMessage.style.display = 'none';
+        }, 5000); // Message will disappear after 5 seconds
+    });
+});
