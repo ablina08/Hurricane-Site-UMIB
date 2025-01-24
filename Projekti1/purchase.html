@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Purchase</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="purchase.css">
+    <script src="purchase.js"></script>
+</head>
+<body>
+         <!-- Product Information -->
+    <div class="container ash-mt-5">
+         <div class="row">
+                 <!-- Product Details Section -->
+            <div class="col-md-6">
+                <div class="ash-product-card">
+                    <img src="https://insights.ibx.com/wp-content/uploads/2019/06/first-aid-kit-screenshot.png" alt="Product Image" class="ash-product-image img-fluid">
+                    <h3 class="ash-product-title">First Aid Kit</h3>
+                    <p class="ash-product-description">A complete first aid kit with all the essentials to help during an emergency.</p>
+                    <p class="ash-product-price">$29.99</p>
+                    <button class="ash-btn btn btn-primary" id="buyNowBtn">Buy Now</button>
+                </div>
+            </div>
+         </div>
+            <!-- Payment Form Section -->
+            <div class="col-md-6">
+                <h3>Enter Your Payment Details</h3>
+                <form id="paymentForm">
+                    <div class="form-group">
+                        <label for="fullName" class="ash-form-label">Full Name</label>
+                        <input type="text" class="ash-form-control form-control" id="fullName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="ash-form-label">Email Address</label>
+                        <input type="email" class="ash-form-control form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address" class="ash-form-label">Shipping Address</label>
+                        <input type="text" class="ash-form-control form-control" id="address" placeholder="Enter your shipping address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cardNumber" class="ash-form-label">Credit Card Number</label>
+                        <input type="text" class="ash-form-control form-control" id="cardNumber" placeholder="Enter your card number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expiryDate" class="ash-form-label">Expiry Date</label>
+                        <input type="month" class="ash-form-control form-control" id="expiryDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv" class="ash-form-label">CVV</label>
+                        <input type="text" class="ash-form-control form-control" id="cvv" placeholder="Enter your card's CVV" required>
+                    </div>
+                    <button type="submit" class="ash-btn btn btn-primary">Complete Purchase</button>
+                </form>
+                <div id="paymentResult" class="ash-mt-3"></div>
+            </div>
+        </div>
+    </div>
+    <div id="successMessage">
+        <strong>Submitted Successfully!</strong>
+    </div>
+    <!-- Cart Display Section -->
+    <div class="container ash-mt-5">
+        <h2>Your Cart</h2>
+        <div id="cartItems" class="ash-cart-items">
+            <!-- Cart items will be populated by JavaScript -->
+        </div>
+
+        <div class="ash-cart-total">
+            <h3>Total: $<span id="cartTotal">0.00</span></h3>
+        </div>
+
+        <div class="ash-checkout">
+            <button class="ash-btn btn btn-primary" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
