@@ -24,7 +24,7 @@ document.getElementById('ash-signin-form').addEventListener('submit', function(e
     });
     
     //search placeholder open page when entered//
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded"), function() {
         // Get the search input field and button
         const searchInput = document.querySelector(".form-control");
         const searchButton = document.querySelector(".btn-outline-success");
@@ -64,4 +64,4 @@ document.getElementById('ash-signin-form').addEventListener('submit', function(e
                 alert("No matching page found!");  // Alert if no match
             }
         });
-    });
+}

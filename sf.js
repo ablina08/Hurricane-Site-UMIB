@@ -6,13 +6,13 @@ function showImage(index) {
 }
 
     //search placeholder open page when entered//
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded"), function() {
         // Get the search input field and button
         const searchInput = document.querySelector(".form-control");
-        const searchButton = document.querySelector(".btn-outline-success");
+        const searchButton = document.querySelector(".btn-outline-success");}
     
         // Function to handle the search and redirect
-        searchButton.addEventListener("click", function(event) {
+        searchButton.addEventListener("click", functionevent) {
             event.preventDefault();  // Prevent the form from submitting the default way
             
             const query = searchInput.value.toLowerCase();  // Get the search query
@@ -45,5 +45,4 @@ function showImage(index) {
             } else {
                 alert("No matching page found!");  // Alert if no match
             }
-        });
-    });
+}
