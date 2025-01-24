@@ -1,0 +1,64 @@
+/* Product Card Section */
+.ash-product-card {
+        border: 1px solid #ddd;
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+        background-color: #f8f8f8;
+    }
+    
+    .ash-product-image {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    
+    .ash-product-title {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        font-weight: bold;
+    }
+    
+    .ash-product-description {
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .ash-product-price {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #2c3e50;
+    }
+    
+    /* Payment Form Section */
+    .ash-form-label {
+        font-weight: bold;
+    }
+    
+    .ash-form-control {
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+    
+    .ash-btn {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 767px) {
+        .ash-product-card {
+            margin-bottom: 2rem;
+        }
+    
+        .ash-footer {
+            padding: 1rem;
+        }
+    }
+    
+    .ash-mt-5 {
+        margin-top: 5rem;
+    }
+    
+    .ash-mt-3 {
+        margin-top: 3rem;
+    }
