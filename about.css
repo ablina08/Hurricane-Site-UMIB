@@ -1,0 +1,44 @@
+/* Global styling for the page */
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #2980b9;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    header h1 {
+        margin: 0;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    h2 {
+        color: #2980b9;
+        margin-bottom: 15px;
+    }
+    
+    section {
+        margin-bottom: 30px;
+    }
+    
+    section p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    
+        
+    

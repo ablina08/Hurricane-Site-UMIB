@@ -1,20 +1,10 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
-    
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        const responseMessage = document.getElementById('response-message');
-    
-        if (name && email && message) {
-            responseMessage.innerHTML = `<p>Thank you, ${name}! Your message has been sent successfully.</p>`;
-            responseMessage.style.color = 'green';
-        } else {
-            responseMessage.innerHTML = `<p>Please fill in all the fields.</p>`;
-            responseMessage.style.color = 'red';
-        }
-    });
-    
+// Function to toggle the image visibility when a tip box is clicked
+function showImage(index) {
+    const tips = document.querySelectorAll('.ash-tip');  // Select all elements with the class 'ash-tip'
+    // Toggle the 'active' class for the clicked tip
+    tips[index].classList.toggle('active');
+}
+
     //search placeholder open page when entered//
     document.addEventListener("DOMContentLoaded", function() {
         // Get the search input field and button

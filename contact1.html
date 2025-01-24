@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Hurricane Awareness Assistance</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link re="stylesheet" href="bootstrap1.css">
-    <link rel="stylesheet" href="contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">defer</script>
+    <link rel="stylesheet" href="contact1.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="contact.js" defer></script>
+    <script src="contact1.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -64,28 +64,35 @@
                     </form>
                 </div>
             </div>
-        </nav>
+        </nav>  
     </header>
-    <div class="container1">
-        <h1>Contact Us</h1>
+    <div class="ash-container">
+        <h1 class="ash-heading">Contact Hurricane Awareness Support</h1>
+        <p class="ash-paragraph">Need help with hurricane preparedness, safety tips, or emergency assistance? Get in touch with our support team.</p>
         <form id="ash-contact-form">
-            <div class="input-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="ash-name" name="name" required>
+            <div class="ash-input-group">
+                <label for="name" class="ash-label">Full Name</label>
+                <input type="text" id="ash-name" name="name" class="ash-input" required>
             </div>
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="ash-email" name="email" required>
+            <div class="ash-input-group">
+                <label for="email" class="ash-label">Email</label>
+                <input type="email" id="ash-email" name="email" class="ash-input" required>
             </div>
-            <div class="input-group">
-                <label for="message">Message</label>
-                <textarea id="ash-message" name="message" rows="4" required></textarea>
+            <div class="ash-input-group">
+                <label for="message" class="ash-label">Your Message</label>
+                <textarea id="ash-message" name="message" class="ash-textarea" rows="4" required></textarea>
             </div>
-            <button type="submit">Submit</button>
+            <div class="ash-input-group">
+                <label for="emergency" class="ash-label">Is this an emergency?</label>
+                <select id="ash-emergency" name="emergency" class="ash-select" required>
+                    <option value="no">No</option>
+                    <option value="yes">Yes, urgent assistance needed</option>
+                </select>
+            </div>
+            <button type="submit" class="ash-button">Submit</button>
         </form>
-        <div id="ash-response-message"></div>
+        <div id="ash-response-message" class="ash-response-message"></div>
     </div>
-  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

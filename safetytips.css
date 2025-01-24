@@ -1,0 +1,163 @@
+/* Global Styles */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    /* Container */
+    .container {
+        width: 85%;
+        margin: 0 auto;
+    }
+    
+    /* Header */
+    header {
+        background-color: #005f73;
+        padding: 20px 0;
+        color: white;
+    }
+    
+
+    header .logo h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    header nav ul {
+        list-style: none;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    header nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    
+    header nav ul li a:hover {
+        text-decoration: underline;
+    }
+    
+/* Hero Section */
+.ash-hero {
+    background-color: #008C6C;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.ash-hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.ash-hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Safety Tips Section */
+.ash-safety-tips {
+    padding: 60px 0;
+    background-color: #003f3f;
+    color: white;
+    text-align: center;
+}
+
+.ash-safety-tips h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ffb703;
+}
+
+.ash-tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.ash-tip {
+    background-color: #1f3a3a;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ash-tip h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ffb703;
+}
+
+.ash-tip p {
+    font-size: 1rem;
+}
+
+.ash-tip:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.ash-tip img {
+    display: none;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.ash-tip.active img {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #005f73;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .ash-hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .ash-hero p {
+        font-size: 1.2rem;
+    }
+
+    .ash-tip h3 {
+        font-size: 1.5rem;
+    }
+
+    .ash-tip p {
+        font-size: 1rem;
+    }
+}
+    
+    
+    
+    
+    
+    
+    
+      
+      

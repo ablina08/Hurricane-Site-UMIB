@@ -1,17 +1,28 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
+document.addEventListener('DOMContentLoaded', function () {
+        const ashSubscribeForm = document.getElementById('ash-subscribe-form');
+        const ashSuccessMessage = document.getElementById('ash-success-message');
+        const ashEmailInput = document.getElementById('ash-email');
+        
+        // Handling the form submission
+        ashSubscribeForm.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
     
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        const responseMessage = document.getElementById('response-message');
+            const email = ashEmailInput.value;
     
-        if (name && email && message) {
-            responseMessage.innerHTML = `<p>Thank you, ${name}! Your message has been sent successfully.</p>`;
-            responseMessage.style.color = 'green';
-        } else {
-            responseMessage.innerHTML = `<p>Please fill in all the fields.</p>`;
-            responseMessage.style.color = 'red';
+            // Simple email validation
+            if (validateEmail(email)) {
+                // Show the success message and hide the form
+                ashSuccessMessage.style.display = 'block';
+                ashSubscribeForm.style.display = 'none';
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        });
+    
+        // Email validation function (basic check)
+        function validateEmail(email) {
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return regex.test(email);
         }
     });
     

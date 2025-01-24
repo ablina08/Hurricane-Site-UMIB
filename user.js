@@ -1,16 +1,24 @@
-document.getElementById('contact-form').addEventListener('submit', function(event) {
+document.getElementById('ash-signin-form').addEventListener('submit', function(event) {
         event.preventDefault();
     
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        const responseMessage = document.getElementById('response-message');
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        const remember = document.getElementById('remember').checked;
+        const responseMessage = document.getElementById('ash-response-message');
     
-        if (name && email && message) {
-            responseMessage.innerHTML = `<p>Thank you, ${name}! Your message has been sent successfully.</p>`;
+        // Basic form validation
+        if (username && password) {
+            // Example of successful sign-in logic
+            responseMessage.innerHTML = `<p>Welcome back, ${username}!</p>`;
+    
+            // Show success or failure message
+            if (remember) {
+                responseMessage.innerHTML += `<p>We'll remember you next time.</p>`;
+            }
+    
             responseMessage.style.color = 'green';
         } else {
-            responseMessage.innerHTML = `<p>Please fill in all the fields.</p>`;
+            responseMessage.innerHTML = `<p>Please enter both username and password.</p>`;
             responseMessage.style.color = 'red';
         }
     });

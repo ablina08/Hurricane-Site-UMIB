@@ -1,0 +1,90 @@
+/* General styling */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    .ash-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    .ash-subscribe-content {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        max-width: 500px;
+    }
+    
+    h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: #777;
+    }
+    
+    .ash-form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+    
+    .ash-input {
+        padding: 12px;
+        width: 65%;
+        font-size: 16px;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    
+    .ash-btn {
+        padding: 12px;
+        background-color: #5cb85c;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 30%;
+    }
+    
+    .ash-btn:hover {
+        background-color: #4cae4c;
+    }
+    
+    .ash-success-message {
+        margin-top: 20px;
+        color: #28a745;
+        font-size: 18px;
+    }
+    
+    @media screen and (max-width: 600px) {
+        .ash-input {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    
+        .ash-btn {
+            width: 100%;
+        }
+    }
+    

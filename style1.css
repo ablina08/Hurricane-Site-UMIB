@@ -1,0 +1,279 @@
+/* General styles for navbar */
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-link {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.nav-link i {
+    font-size: 1.5rem;
+}
+
+/* General container for the item */
+.item {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* You can adjust this value */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  /* Image styling */
+  .item img {
+    width: 100%;
+    height: 100%; /* Keeps the image aspect ratio */
+    display: flex;
+    border-radius: 8px; /* Optional: Rounded corners for the image */
+  }
+  
+  /* Title overlay styling */
+  .title-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .title-overlay {
+      font-size: 16px;
+      padding: 8px 12px;
+      bottom: 10px;
+      left: 10px;
+    }
+  }
+  
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: auto;
+        background-color: #2d2e33; /* Professional dark background */
+        color: white;
+        padding: 60px 10%;
+        width: 100%;
+        box-sizing: border-box; /* Ensures padding doesn't add extra width */
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0; /* Remove default padding for list */
+    }
+    
+    .ash-footer-col {
+        width: 25%; /* Four columns for desktop view */
+        margin-bottom: 20px;
+    }
+    
+    .ash-footer-col h4 {
+        position: relative;
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 26px;
+        color: #f1bc0d; /* Highlighted title color */
+        text-transform: capitalize;
+    }
+    
+    .ash-footer-col h4::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        background-color: #27c0ac;
+        height: 2px;
+        width: 40px;
+    }
+    
+    ul li:not(:last-child) {
+        margin-bottom: 8px;
+    }
+    
+    ul li a {
+        display: block;
+        font-size: 25px;
+        text-transform: capitalize;
+        color: #bdb6b6;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+    }
+    
+    ul li a:hover {
+        color: white;
+        padding-left: 5px; /* Add subtle hover effect */
+    }
+    
+    .links a {
+        display: inline-block;
+        height: 44px;
+        width: 44px;
+        color: white;
+        background-color: rgba(40, 130, 214, 0.8); /* Stylish button background */
+        margin: 0 8px 8px 0;
+        text-align: center;
+        line-height: 44px;
+        border-radius: 50%; /* Circular buttons */
+        transition: 0.3s ease-in-out;
+    }
+    
+    .links a:hover {
+        color: #4d4f55;
+        background-color: white;
+    }
+    
+    footer .ash-mt-3 {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 740px) {
+        .ash-footer-col {
+            width: 50%;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    
+        .ash-footer-col h4::before {
+            all: unset; /* Remove the line under the title on small screens */
+        }
+    }
+    
+    @media (max-width: 555px) {
+        .ash-footer-col {
+            width: 100%; /* Full width for each column on small screens */
+        }
+    }
+    /* Footer Styles */
+    footer {
+        background: #222;
+        color: white;
+        padding: 1rem o;
+        text-align: center;
+    }
+   
+    footer .ash-mt-3 p {
+        position: relative;
+        margin-left: 70px;
+        font-size: 0.9rem; /* Adjust font size if needed */
+    }
+    
+body {
+        font-family: Arial, sans-serif;
+    }
+    header {
+        background: url('https://example.com/hurricane-background.jpg') no-repeat center center/cover;
+        height: 60vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 3rem;
+        text-shadow: 2px 2px 5px #000;
+    }
+
+    /* Style for the search bar */
+.form-control {
+        border-radius: 0;
+        padding: 10px;
+    }
+    .carousel-inner img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+    
+    /* Additional styles for other hover effects or design customizations */
+    .navbar-nav .nav-link:hover {
+        color: #f8c471; /* Example hover color */
+    }
+    
+    .table tbody tr:hover {
+        background-color: #f2f2f2; /* Highlight row on hover */
+    }
+    
+    .carousel-inner img {
+        height: 800px;
+        object-fit: cover;
+    }
+    
+    /* Responsive styling */
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 24px;
+            text-align: center;
+        }
+    
+        .navbar-brand {
+            font-size: 18px;
+        }
+    }
+    
+    .list .item{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        inset: 0 0 0 0;
+    }
+   .list .item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+     .list .item .content{
+        position: absolute;
+        top: 20%;
+        width: 1140px;
+        max-width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-right: 30%;
+        box-sizing: border-box;
+        color: #fff;
+        text-shadow: 0 5px 10px #0004;
+    }
+   .list .item .author{
+        font-weight: bold;
+        letter-spacing: 10px;
+    }
+    .list .item .title,
+     .list .item .topic{
+        font-size: 5em;
+        font-weight: bold;
+        line-height: 1.3em;
+    }
+     .list .item .topic{
+        color: #f1683a;
+    }

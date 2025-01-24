@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertising</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">defer</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="safetytips.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="sf.js"> defer</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Hurricane Awareness</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="fa-solid fa-home"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-solid fa-info-circle"></i>About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="https://zoom.earth/">Track Now</a>
+                                <a class="dropdown-item" href="index1.html">About Hurricanes</a>
+                                <a class="dropdown-item" href="contact1.html">Contact</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-solid fa-globe"></i> Resources
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="safetytips.html">Safety Tips</a>
+                                <a class="dropdown-item" href="5.html">Track Weather</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="business.html">Our Bussiness</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                <i class="fa-solid fa-shopping-cart"></i>Products
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="user.html">
+                                <i class="fa-solid fa-user"></i>Sign In
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="ash-safety-tips">
+        <div class="ash-container">
+            <h2>Hurricane Safety Tips</h2>
+            <h2>Press on the boxes for more</h2>
+            <div class="ash-tips">
+                <div class="ash-tip" onclick="showImage(0)">
+                    <h3>1. Know Your Risks</h3>
+                    <p>Identify if you live in a hurricane-prone area and understand the possible hazards in your region, such as storm surge or flooding.</p>
+                    <img src="https://i.ytimg.com/vi/GZX5EgqqCwA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDYb1bBrOO-ymKqJBX3Zx4lTAvKKQ.jpg" alt="Know Your Risks" class="ash-tip-image"> 
+                    <div class="ash-ratio ash-ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/GZX5EgqqCwA" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="ash-tip" onclick="showImage(1)">
+                    <h3>2. Create a Plan</h3>
+                    <p>Develop an emergency plan with evacuation routes, designated safe areas, and a communication plan for your family.</p>
+                    <img src="https://www.quitmanga.gov/sites/default/files/uploads/feature-images/Hurricane-Prep/time-to-prepare-is-now.jpg" alt="Create a Plan" class="ash-tip-image">
+                </div>
+                <div class="ash-tip" onclick="showImage(2)">
+                    <h3>3. Prepare an Emergency Kit</h3>
+                    <p>Gather essential supplies such as water, non-perishable food, medications, a flashlight, batteries, and first-aid kits.</p>
+                    <img src="https://media.al.com/live/photo/emergency-kit-checklist-2012-abbdb539aa798f18.jpg" alt="Prepare an Emergency Kit" class="ash-tip-image">
+                </div>
+                <div class="ash-tip" onclick="showImage(3)">
+                    <h3>4. Secure Your Home</h3>
+                    <p>Ensure your home is well-prepared by installing shutters, securing doors and windows, and removing outdoor items that could become projectiles.</p>
+                    <img src="https://npr.brightspotcdn.com/dims4/default/cca6204/2147483647/strip/true/crop/2303x2535+0+0/resize/880x969!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc5%2Fea%2F3366fb1c43b988ec82108a9cad8a%2Ffema-prepare-home-socialmedia-square-graphic.jpg" alt="Secure Your Home" class="ash-tip-image">
+                </div>
+                <div class="ash-tip" onclick="showImage(4)">
+                    <h3>5. Stay Informed</h3>
+                    <p>Monitor weather updates and alerts from trusted sources. Stay connected with local authorities and emergency services.</p>
+                    <img src="https://pbs.twimg.com/media/Ei2SbE0WoAEFIDe.jpg" alt="Stay Informed" class="ash-tip-image">
+                </div>
+                <!-- Additional Boxes -->
+                <div class="ash-tip" onclick="showImage(5)">
+                    <h3>6. Evacuate if Necessary</h3>
+                    <p>If authorities issue an evacuation order, leave early and follow the recommended evacuation routes to avoid getting stuck in traffic.</p>
+                    <img src="https://cbs12.com/resources/media/ee91619d-18fd-44a8-8ea3-6fb020f5cd2a-full16x9_HurricanePreparednessEvacuationPlan.png?1620639577710.jpg" alt="Evacuate if Necessary" class="ash-tip-image">
+                </div>
+                <div class="ash-tip" onclick="showImage(6)">
+                    <h3>7. Protect Your Vehicle</h3>
+                    <p>Move your vehicle to higher ground if possible and ensure it's fueled in case evacuation is necessary.</p>
+                    <img src="https://www.wikihow.com/images/thumb/f/f7/Ready-Your-Vehicle-for-a-Hurricane-Step-1-Version-2.jpg/v4-460px-Ready-Your-Vehicle-for-a-Hurricane-Step-1-Version-2.jpg.webp" alt="Protect Your Vehicle" class="ash-tip-image">
+                </div>
+                <div class="ash-tip" onclick="showImage(7)">
+                    <h3>8. Prepare Your Pets</h3>
+                    <p>Ensure that you have enough food, water, and medications for your pets. Have a plan for evacuating them as well.</p>
+                    <img src="https://www.humanesociety.org/sites/default/files/styles/360x284/public/2023-08/disaster-emergency-kit.png?h=eb250db1&itok=yTKTnTTG.jpg" alt="Prepare Your Pets" class="ash-tip-image">
+                </div>
+                <div class="ash-tip" onclick="showImage(8)">
+                    <h3>9. Check Insurance Coverage</h3>
+                    <p>Review your insurance policy to ensure you're covered for hurricane-related damages, especially flooding.</p>
+                    <img src="https://www.weather.gov/images/wrn/hurricanep-preparedness/2020/May-6-Get-an-Insurance-Checkup.png" alt="Check Insurance Coverage" class="ash-tip-image">
+                </div>
+                <div class="ash-tip" onclick="showImage(9)">
+                    <h3>10. Avoid Flooded Areas</h3>
+                    <p>Avoid walking or driving through flooded areas. Even shallow water can sweep you away or damage your vehicle.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQwf-40LSTIsxxXO7CQu-IRiCyCIt7uRtDm2bVzd3zFTa5E-xWGPu-gvzI9kpSa_scW4o&usqp=CAU.jpg" alt="Avoid Flooded Areas" class="ash-tip-image">
+                </div>
+                <div class="ash-tip" onclick="showImage(10)">
+                    <h3>11. Stock up on Gas</h3>
+                    <p>Make sure your vehicle and any portable generators are filled with gas. Gas stations may be closed or have long lines during and after the storm.</p>
+                    <img src="https://www.news-press.com/gcdn/authoring/authoring-images/2024/10/07/NLED/75558921007-100724-ep-milton-3-news.jpg?width=1200&disable=upscale&format=pjpg&auto=webp.jpg" alt="Stock up on Gas" class="ash-tip-image">
+                </div>
+                <div class="ash-tip" onclick="showImage(11)">
+                    <h3>12. Strengthen Your Roof</h3>
+                    <p>Consider reinforcing your roof if you live in an area with frequent hurricanes. Use hurricane straps to secure the roof to the walls and foundation.</p>
+                    <img src="https://i.ytimg.com/vi/E-N0ImX0-ic/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCsAX6MymAWvtUsjB0z18MZ0tH-GQ.jpg" alt="Strengthen Your Roof" class="ash-tip-image">
+                    <iframe src="https://www.youtube.com/embed/E-N0ImX0-ic" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="ash-footer-col">
+            <h4>products</h4>
+            <ul>
+                <li><a href="teams.html">teams</a></li>
+                <li><a href="advertising.html">advertising</a></li>
+                <li><a href="une.html">Pics</a></li>
+            </ul>
+        </div>
+        <div class="ash-footer-col">
+            <h4>network</h4>
+            <ul>
+                <li><a href="science.html">science</a></li>
+                <li><a href="business.html">business</a></li>
+                <li><a href="professional.html">professional</a></li>
+                <li><a href="API.html">API</a></li>
+            </ul>
+        </div>
+        <div class="ash-footer-col">
+            <h4>company</h4>
+            <ul>
+                <li><a href="about.html">about</a></li>
+                <li><a href="legal.html">legal</a></li>
+                <li><a href="contact1.html">contact us</a></li>
+            </ul>
+        </div>
+        <div class="ash-footer-col">
+            <h4>follow us</h4>
+            <div class="links">
+                <a href="https://www.linkedin.com" data-platform="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com" data-platform="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" data-platform="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" data-platform="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="ash-mt-3">
+            <p>&copy; 2025 Hurricane Awareness. All Rights Reserved.</p>
+        </div> 
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

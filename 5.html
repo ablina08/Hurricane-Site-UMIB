@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Hurricanes</title>
+    <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link re="stylesheet" href="bootstrap1.css">
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="contact.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">defer</script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="5.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="5.js"></script>
 </head>
 <body>
     <header>
@@ -64,30 +65,72 @@
                     </form>
                 </div>
             </div>
-        </nav>
+        </nav> 
     </header>
-    <div class="container1">
-        <h1>Contact Us</h1>
-        <form id="ash-contact-form">
-            <div class="input-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="ash-name" name="name" required>
-            </div>
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="ash-email" name="email" required>
-            </div>
-            <div class="input-group">
-                <label for="message">Message</label>
-                <textarea id="ash-message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
-        <div id="ash-response-message"></div>
-    </div>
   
+   <div id="ash-weather-container" class="ash-weather">
+     <h2>Weather App</h2>
+    
+     <!-- Input field with updated attribute -->
+     <input type="text" id="ash-city" placeholder="Enter city" writingsuggestions="true">
+    
+     <!-- Button to fetch weather data -->
+     <button onclick="getWeather()">Search</button>
+
+     <!-- Weather icon -->
+     <img id="ash-weather-icon" alt="Weather Icon">
+
+     <!-- Temperature display -->
+     <div id="ash-temp-div"></div>
+
+     <!-- Weather information -->
+     <div id="ash-weather-info"></div>
+
+     <!-- Hourly forecast container -->
+     <div id="ash-hourly-forecast"></div>
+  </div>
+
+ <footer>
+      <div class="ash-footer-col">
+         <h4>products</h4>
+          <ul>
+             <li><a href="teams.html">teams</a></li>
+             <li><a href="advertising.html">advertising</a></li>
+             <li><a href="une.html">Pics</a></li>
+          </ul>
+      </div>
+      <div class="ash-footer-col">
+         <h4>network</h4>
+          <ul>
+             <li><a href="science.html">science</a></li>
+             <li><a href="business.html">business</a></li>
+             <li><a href="professional.html">professional</a></li>
+             <li><a href="API.html">API</a></li>
+          </ul>
+      </div>
+      <div class="ash-footer-col">
+         <h4>company</h4>
+          <ul>
+             <li><a href="about.html">about</a></li>
+             <li><a href="legal.css">legal</a></li>
+             <li><a href="contact1">contact us</a></li>
+          </ul>
+       </div>
+       <div class="ash-footer-col">
+         <h4>follow us</h4>
+          <div class="links">
+             <a href="https://www.linkedin.com" data-platform="linkedin"><i class="fab fa-linkedin-in"></i></a>
+             <a href="https://www.facebook.com" data-platform="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+             <a href="https://www.twitter.com" data-platform="twitter"><i class="fab fa-twitter"></i></a>
+             <a href="https://www.instagram.com" data-platform="instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+       </div>
+     <div class="ash-mt-3">
+         <p>&copy; 2025 Hurricane Awareness. All Rights Reserved.</p>
+     </div>
+  </footer>    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>     
 </body>
 </html>

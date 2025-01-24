@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurricane Products</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="styles.css">   <!-- Link to CSS -->
+    <script src="products.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Hurricane Awareness</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <i class="fa-solid fa-home"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-solid fa-info-circle"></i>About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="https://zoom.earth/">Track Now</a>
+                                <a class="dropdown-item" href="index1.html">About Hurricanes</a>
+                                <a class="dropdown-item" href="contact1.html">Contact</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-solid fa-globe"></i> Resources
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="safetytips.html">Safety Tips</a>
+                                <a class="dropdown-item" href="5.html">Track Weather</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="business.html">Our Bussiness</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">
+                                <i class="fa-solid fa-shopping-cart"></i>Products
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="user.html">
+                                <i class="fa-solid fa-user"></i>Sign In
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+            </div>
+        </nav>
+   </header>   
+   <header>
+   <h1>Essential Products for Hurricane Preparedness</h1>
+   <p>Stay safe and be ready with the best hurricane preparedness products.</p>
+   </header>
+  
+   <!-- Products Section -->
+   <section id="ash-products" class="container ash-mt-5">
+        <div class="row">
+            <!-- Product Filters -->
+            <div class="col-md-3">
+                <div class="ash-filter-section">
+                    <h4>Filter by Category</h4>
+                    <select class="form-control" id="ash-categoryFilter">
+                        <option value="">All Categories</option>
+                        <option value="supplies">Emergency Supplies</option>
+                        <option value="tools">Tools & Gear</option>
+                        <option value="food">Non-Perishable Foods</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Products Grid -->
+            <div class="col-md-9">
+                <div class="row" id="ash-productList">
+                    <!-- Product 1 -->
+                    <div class="col-md-4 ash-product-item" data-category="supplies">
+                        <div class="card">
+                            <img src="https://insights.ibx.com/wp-content/uploads/2019/06/first-aid-kit-screenshot.png" class="card-img-top" alt="First Aid Kit">
+                            <div class="card-body">
+                                <h5 class="card-title">First Aid Kit</h5>
+                                <p class="card-text">$29.99</p>
+                                <p class="ash-text-success">Sale: 10% off</p>
+                                <button class="btn btn-primary btn-buy-now" data-title="First Aid Kit" data-price="$29.99" data-image="https://insights.ibx.com/wp-content/uploads/2019/06/first-aid-kit-screenshot.png">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="col-md-4 ash-product-item" data-category="tools">
+                        <div class="card">
+                            <img src="https://philmedicrescue.com/wp-content/uploads/2022/12/Flashlight-Taclight-40x-2.png" class="card-img-top" alt="Emergency Flashlight">
+                            <div class="card-body">
+                                <h5 class="card-title">Emergency Flashlight</h5>
+                                <p class="card-text">$19.99</p>
+                                <p class="ash-text-success">Sale: 15% off</p>
+                                <button class="btn btn-primary btn-buy-now" data-title="Emergency Flashlight" data-price="$19.99" data-image="https://philmedicrescue.com/wp-content/uploads/2022/12/Flashlight-Taclight-40x-2.png">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="col-md-4 ash-product-item" data-category="food">
+                        <div class="card">
+                            <img src="https://extension.umn.edu/sites/extension.umn.edu/files/styles/3_x_2_collage_image_wide/public/IMG-9244.jpg" class="card-img-top" alt="Non-Perishable Food">
+                            <div class="card-body">
+                                <h5 class="card-title">Non-Perishable Food Pack</h5>
+                                <p class="card-text">$49.99</p>
+                                <p class="ash-text-success">Sale: 5% off</p>
+                                <button class="btn btn-primary btn-buy-now" data-title="Non-Perishable Food Pack" data-price="$49.99" data-image="https://extension.umn.edu/sites/extension.umn.edu/files/styles/3_x_2_collage_image_wide/public/IMG-9244.jpg">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="col-md-4 ash-product-item" data-category="supplies">
+                        <div class="card">
+                            <img src="https://plumbing-connection.com/blog/wp-content/uploads/2021/02/water-filtration-system-1.jpg" class="card-img-top" alt="Water Filtration System">
+                            <div class="card-body">
+                                <h5 class="card-title">Water Filtration System</h5>
+                                <p class="card-text">$89.99</p>
+                                <p class="ash-text-success">Sale: 12% off</p>
+                                <button class="btn btn-primary btn-buy-now" data-title="Water Filtration System" data-price="$89.99" data-image="https://plumbing-connection.com/blog/wp-content/uploads/2021/02/water-filtration-system-1.jpg">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="col-md-4 ash-product-item" data-category="tools">
+                        <div class="card">
+                            <img src="https://goodwill.in/pub/media/catalog/product/cache/affde3bad6fff216fce8dd9a3ef91de9/s/t/stmt81243-840_110pcs_1.jpg" class="card-img-top" alt="Multi-Tool Kit">
+                            <div class="card-body">
+                                <h5 class="card-title">Multi-Tool Kit</h5>
+                                <p class="card-text">$39.99</p>
+                                <p class="ash-text-success">Sale: 20% off</p>
+                                <button class="btn btn-primary btn-buy-now" data-title="Multi-Tool Kit" data-price="$39.99" data-image="https://goodwill.in/pub/media/catalog/product/cache/affde3bad6fff216fce8dd9a3ef91de9/s/t/stmt81243-840_110pcs_1.jpg">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="col-md-4 ash-product-item" data-category="food">
+                        <div class="card">
+                            <img src="https://cdn11.bigcommerce.com/s-tumf4kk1l4/images/stencil/1280x1280/products/3948/8190/NXSB-100__81189.1698346699.jpg?c=1?imbypass=on.jpg" class="card-img-top" alt="Emergency Rations">
+                            <div class="card-body">
+                                <h5 class="card-title">Emergency Rations</h5>
+                                <p class="card-text">$24.99</p>
+                                <p class="ash-text-success">Sale: 8% off</p>
+                                <button class="btn btn-primary btn-buy-now" data-title="Emergency Rations" data-price="$24.99" data-image="https://cdn11.bigcommerce.com/s-tumf4kk1l4/images/stencil/1280x1280/products/3948/8190/NXSB-100__81189.1698346699.jpg?c=1?imbypass=on.jpg">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 7 -->
+                    <div class="col-md-4 ash-product-item" data-category="supplies">
+                        <div class="card">
+                            <img src="https://i.ebayimg.com/images/g/VnoAAOSwMmJjPqHi/s-l400.jpg" class="card-img-top" alt="Portable Generator">
+                            <div class="card-body">
+                                <h5 class="card-title">Portable Generator</h5>
+                                <p class="card-text">$299.99</p>
+                                <p class="ash-text-success">Sale: 25% off</p>
+                                <button class="btn btn-primary btn-buy-now" data-title="Portable Generator" data-price="$299.99" data-image="https://i.ebayimg.com/images/g/VnoAAOSwMmJjPqHi/s-l400.jpg">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 8 -->
+                    <div class="col-md-4 ash-product-item" data-category="tools">
+                        <div class="card">
+                            <img src="https://m.media-amazon.com/images/I/410yqLTb5UL.jpg" class="card-img-top" alt="Survival Knife">
+                            <div class="card-body">
+                                <h5 class="card-title">Survival Knife</h5>
+                                <p class="card-text">$15.99</p>
+                                <p class="ash-text-success">Sale: 10% off</p>
+                                <button class="btn btn-primary btn-buy-now" data-title="Survival Knife" data-price="$15.99" data-image="https://m.media-amazon.com/images/I/410yqLTb5UL.jpg">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 9 -->
+                    <div class="col-md-4 ash-product-item" data-category="food">
+                        <div class="card">
+                            <img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/NUNVBKEABUI6VBGCA6JNQWIZCE.jpg&w=1800&h=1800" class="card-img-top" alt="Canned Goods Pack">
+                            <div class="card-body">
+                                <h5 class="card-title">Canned Goods Pack</h5>
+                                <p class="card-text">$19.99</p>
+                                <p class="ash-text-success">Sale: 5% off</p>
+                                <button class="btn btn-primary btn-buy-now" data-title="Canned Goods Pack" data-price="$19.99" data-image="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/NUNVBKEABUI6VBGCA6JNQWIZCE.jpg&w=1800&h=1800">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cartSection" class="container ash-mt-5">
+        <h4>Your Cart</h4>
+        <ul id="cartItems">
+            <!-- Cart items will be dynamically displayed here -->
+        </ul>
+        <button id="ash-checkoutBtn" class="btn btn-success">Proceed to Checkout</button>
+    </section>
+    <div>
+        <footer>
+            <div class="ash-footer-col">
+                <h4>products</h4>
+                <ul>
+                    <li><a href="teams.html">teams</a></li>
+                    <li><a href="advertising.html">advertising</a></li>
+                    <li><a href="une.html">Pics</a></li>
+                </ul>       
+            </div>
+            <div class="ash-footer-col">
+               <h4>network</h4>
+                <ul>
+                    <li><a href="science.html">science</a></li>
+                    <li><a href="business.html">business</a></li>
+                    <li><a href="professional.html">professional</a></li>
+                    <li><a href="API.html">API</a></li>
+                </ul>   
+            </div>
+            <div class="ash-footer-col">
+             <h4>company</h4>
+                <ul>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="legal.html">legal</a></li>
+                    <li><a href="contact1.html">contact us</a></li>
+                </ul>  
+            </div>
+            <div class="ash-footer-col">
+                <h4>follow us</h4>
+                <div class="links">
+                  <a href="https://www.linkedin.com" data-platform="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://www.facebook.com" data-platform="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.twitter.com" data-platform="twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.instagram.com" data-platform="instagram"><i class="fab fa-instagram"></i></a>
+                </div>   
+            </div>
+            <div class="ash-mt-3">
+                <p>&copy; 2025 Hurricane Awareness. All Rights Reserved.</p>
+            </div>      
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
