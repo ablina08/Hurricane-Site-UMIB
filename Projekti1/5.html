@@ -52,21 +52,29 @@
                </div>   
             </div> 
         </nav>
-        <h1>Understanding Hurricanes</h1>
    </header>   
-<div id="weather-container" class="ash-weather">
+   <div id="weather-container" class="ash-weather">
     <h2>Weather App</h2>
-    <input type="text" id="city" placeholder="Enter city">
+    
+    <!-- Input field with updated attribute -->
+    <input type="text" id="city" placeholder="Enter city" writingsuggestions="true">
+    
+    <!-- Button to fetch weather data -->
     <button onclick="getWeather()">Search</button>
 
+    <!-- Weather icon -->
     <img id="weather-icon" alt="Weather Icon">
 
+    <!-- Temperature display -->
     <div id="temp-div"></div>
 
+    <!-- Weather information -->
     <div id="weather-info"></div>
 
+    <!-- Hourly forecast container -->
     <div id="hourly-forecast"></div>
-</div>  
+</div>
+
 <footer>
     <div class="ash-footer-col">
         <h4>products</h4>
@@ -97,10 +105,10 @@
     <div class="ash-footer-col">
         <h4>follow us</h4>
         <div class="links">
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" data-platform="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com" data-platform="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com" data-platform="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" data-platform="instagram"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
     <div class="ash-mt-3">
