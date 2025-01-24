@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurricane Awareness Assistance</title>
+    <link rel="stylesheet" href="contact1.css">
+    <script src="contact1.js" defer></script>
+</head>
+<body>
+    <div class="ash-container">
+        <h1 class="ash-heading">Contact Hurricane Awareness Support</h1>
+        <p class="ash-paragraph">Need help with hurricane preparedness, safety tips, or emergency assistance? Get in touch with our support team.</p>
+        <form id="ash-contact-form">
+            <div class="ash-input-group">
+                <label for="name" class="ash-label">Full Name</label>
+                <input type="text" id="name" name="name" class="ash-input" required>
+            </div>
+            <div class="ash-input-group">
+                <label for="email" class="ash-label">Email</label>
+                <input type="email" id="email" name="email" class="ash-input" required>
+            </div>
+            <div class="ash-input-group">
+                <label for="message" class="ash-label">Your Message</label>
+                <textarea id="message" name="message" class="ash-textarea" rows="4" required></textarea>
+            </div>
+            <div class="ash-input-group">
+                <label for="emergency" class="ash-label">Is this an emergency?</label>
+                <select id="emergency" name="emergency" class="ash-select" required>
+                    <option value="no">No</option>
+                    <option value="yes">Yes, urgent assistance needed</option>
+                </select>
+            </div>
+            <button type="submit" class="ash-button">Submit</button>
+        </form>
+        <div id="response-message" class="ash-response-message"></div>
+    </div>
+</body>
+</html>
