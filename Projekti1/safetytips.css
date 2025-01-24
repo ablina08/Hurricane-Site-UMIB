@@ -52,128 +52,106 @@
         text-decoration: underline;
     }
     
-    /* Hero Section */
-    .hero {
-        background-color: #008C6C;
-        color: white;
-        text-align: center;
-        padding: 60px 20px;
-    }
-    
-    .hero h2 {
-        font-size: 3rem;
-        margin-bottom: 10px;
-    }
-    
-    .hero p {
-        font-size: 1.5rem;
-        margin-top: 10px;
-    }
-    
-    /* Safety Tips Section */
-    .safety-tips {
-        padding: 60px 0;
-        background-color: #003f3f;
-        color: white;
-        text-align: center;
-    }
-    
-    .safety-tips h2 {
-        font-size: 2.5rem;
-        margin-bottom: 40px;
-        color: #ffb703;
-    }
-    
-/* From Uiverse.io by adamgiebl */ 
-.ash-button {
-        background-color: #e0e0e0;
-        border-radius: 50px;
-        box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #ffffff;
-        color: #4d4d4d;
-        cursor: pointer;
-        font-size: 18px;
-        padding: 10px 10px;
-        transition: all 0.2s ease-in-out;
-        border: 2px solid rgb(206, 206, 206);
-      }
-      
-      .ash-button:hover {
-        box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
-      }
-      
-      .ash-button:focus {
-        outline: none;
-        box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
-      }
+/* Hero Section */
+.ash-hero {
+    background-color: #008C6C;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
 
-    .tips {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 30px;
+.ash-hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.ash-hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Safety Tips Section */
+.ash-safety-tips {
+    padding: 60px 0;
+    background-color: #003f3f;
+    color: white;
+    text-align: center;
+}
+
+.ash-safety-tips h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ffb703;
+}
+
+.ash-tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.ash-tip {
+    background-color: #1f3a3a;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ash-tip h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #ffb703;
+}
+
+.ash-tip p {
+    font-size: 1rem;
+}
+
+.ash-tip:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.ash-tip img {
+    display: none;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.ash-tip.active img {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #005f73;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .ash-hero h2 {
+        font-size: 2.5rem;
     }
-    
-    .tip {
-        background-color: #1f3a3a;
-        padding: 25px;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-        position: relative;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    .ash-hero p {
+        font-size: 1.2rem;
     }
-    
-    .tip h3 {
-        font-size: 1.8rem;
-        margin-bottom: 20px;
-        color: #ffb703;
+
+    .ash-tip h3 {
+        font-size: 1.5rem;
     }
-    
-    .tip p {
+
+    .ash-tip p {
         font-size: 1rem;
     }
-    
-    .tip:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-    }
-    
-    .tip img {
-        display: none;
-        width: 100%;
-        border-radius: 8px;
-        margin-top: 15px;
-    }
-    
-    .tip.active img {
-        display: block;
-    }
-    
-    /* Footer */
-    footer {
-        background-color: #005f73;
-        padding: 20px;
-        text-align: center;
-        color: white;
-    }
-    
-    /* Mobile Responsiveness */
-    @media (max-width: 768px) {
-        .hero h2 {
-            font-size: 2.5rem;
-        }
-    
-        .hero p {
-            font-size: 1.2rem;
-        }
-    
-        .tip h3 {
-            font-size: 1.5rem;
-        }
-    
-        .tip p {
-            font-size: 1rem;
-        }
-    }
+}
     
     
     
