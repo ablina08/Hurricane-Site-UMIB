@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertising</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">defer</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="sot.css">
+    <script src="sot.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Hurricane Awareness</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-home"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-hurricane"></i> About Hurricanes
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-solid fa-book"></i> Resources
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Safety Tips</a>
+                                <a class="dropdown-item" href="#">Emergency Contacts</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">More Resources</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-phone"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="ash-container">
+        <!-- Alerts -->
+        <div class="alert alert-info">
+            <i class="alert-icon fas fa-info-circle"></i>
+            <span>Stay informed about hurricane categories and safety measures.</span>
+        </div>
+        <div class="alert alert-warning">
+            <i class="alert-icon fas fa-exclamation-triangle"></i>
+            <span>Be prepared: Hurricanes can intensify quickly and cause significant damage.</span>
+        </div>
+    </div>
+    <div class="ash-container">
+        <header>
+            <h1 class="ash-title">Understanding Hurricane Types</h1>
+        </header>
+        <section class="ash-content">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Destructiveness</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tropical Depression</td>
+                        <td>A system of clouds and thunderstorms with a defined circulation and maximum sustained winds of less than 39 mph.</td>
+                        <td>Low</td>
+                    </tr>
+                    <tr>
+                        <td>Tropical Storm</td>
+                        <td>A tropical cyclone with maximum sustained winds ranging from 39 to 73 mph. These storms often bring heavy rainfall and strong winds.</td>
+                        <td>Moderate</td>
+                    </tr>
+                    <tr>
+                        <td>Category 1 Hurricane</td>
+                        <td>Sustained winds of 74 to 95 mph. These storms can cause some damage to roofs, trees, and power lines.</td>
+                        <td>Moderate</td>
+                    </tr>
+                    <tr>
+                        <td>Category 2 Hurricane</td>
+                        <td>Features winds of 96 to 110 mph. Damage to buildings and vegetation is more extensive compared to Category 1.</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>Category 3 Hurricane</td>
+                        <td>Winds of 111 to 129 mph. These storms cause devastating damage, including major destruction to buildings and infrastructure.</td>
+                        <td>Very High</td>
+                    </tr>
+                    <tr>
+                        <td>Category 4 Hurricane</td>
+                        <td>Winds of 130 to 156 mph, causing catastrophic damage, severely affecting homes, power supplies, and the environment.</td>
+                        <td>Extreme</td>
+                    </tr>
+                    <tr>
+                        <td>Category 5 Hurricane</td>
+                        <td>Winds exceeding 157 mph. These storms result in total devastation, making areas uninhabitable for weeks or months.</td>
+                        <td>Catastrophic</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <div class="ash-row my-5">
+        <div class="col-md-12">
+            <h2>Interactive Map of Recent Hurricanes</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31553595.580067273!2d-123.52464034495126!3d23.63450183451806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDM4JzA0LjUiTiA4NcKwMjknMzUuOCJX!5e0!3m2!1sen!2sus!4v1693594291734!5m2!1sen!2sus" style="border: none; width: 100%; height: 500px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>      
+    </div>
+</div>
+<div class="ash-container my-5">
+        <div class="ash-row">
+            <div class="ash-col-md-6">
+                <h2>What is a Hurricane?</h2>
+                <p>A hurricane is a type of tropical cyclone that forms over warm ocean waters and is characterized by high winds, heavy rain, and potential flooding. These storms can cause massive destruction along coastal areas and further inland.</p>
+            </div>    
+        </div>
+        <div class="ash-container my-4">
+            <div class="ash-row">
+                <div class="ash-col-12">
+                    <h5>Hurricane Safety Tips: Tips On Being Prepared For A Hurricane</h5>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/aEkAzbM4_HU" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div class="ash-container my-4">
+        <div class="ash-row">
+            <div class="ash-col-12">
+                <h5>Hurricane Helene - Massive Storm Surge from Cedar Key, Florida</h5>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/pxTqQss2dvc" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ash-container my-4">
+        <div class="ash-row">
+            <div class="ash-col-12">
+                <div class="card">
+                    <div class="ash-card-body text-center">
+                        <h5 class="ash-card-title">Learn About Hurricanes</h5>
+                        <p class="ash-card-text">Watch this video to learn more about hurricanes and AI prediction.</p>
+                        <a href="https://youtu.be/hU4viZzTaRc" target="_blank" class="btn btn-primary">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+    <footer>
+        <div class="ash-footer-col">
+            <h4>products</h4>
+            <ul>
+                <li><a href="teams.html">teams</a></li>
+                <li><a href="advertising.html">advertising</a></li>
+                <li><a href="#">talent</a></li>
+            </ul>
+        </div>
+        <div class="ash-footer-col">
+            <h4>network</h4>
+            <ul>
+                <li><a href="tech.html">technology</a></li>
+                <li><a href="science.html">science</a></li>
+                <li><a href="business.html">business</a></li>
+                <li><a href="professional.html">professional</a></li>
+                <li><a href="API.html">API</a></li>
+            </ul>
+        </div>
+        <div class="ash-footer-col">
+            <h4>company</h4>
+            <ul>
+                <li><a href="about.html">about</a></li>
+                <li><a href="legal.html">legal</a></li>
+                <li><a href="contactus.html">contact us</a></li>
+            </ul>
+        </div>
+        <div class="ash-footer-col">
+            <h4>follow us</h4>
+            <div class="links">
+                <a href="https://www.linkedin.com" data-platform="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com" data-platform="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" data-platform="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" data-platform="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="ash-mt-3">
+            <p>&copy; 2025 Hurricane Awareness. All Rights Reserved.</p>
+        </div>     
+    </footer> 
+</body>
+</html>
