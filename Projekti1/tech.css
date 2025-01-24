@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-link {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.nav-link i {
+    font-size: 1.5rem;
+}
+
 /* Global styling for the page */
 body {
         font-family: Arial, sans-serif;
@@ -26,4 +56,60 @@ body {
         color: #2ecc71;
     }
     
+    /* this is footer */
+    body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .content-wrapper {
+        flex: 1;
+        padding: 20px;
+    }
+    
+    .ash-footer {
+        background: #222;
+        color: #fff;
+        padding: 20px;
+    }
+    
+    .ash-footer-col {
+        margin-bottom: 20px;
+    }
+    
+    .ash-footer h4 {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .ash-footer ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .ash-footer ul li {
+        margin-bottom: 5px;
+    }
+    
+    .ash-footer ul li a {
+        color: #ccc;
+        text-decoration: none;
+    }
+    
+    .ash-footer ul li a:hover {
+        color: #007bff;
+    }
+    
+    .ash-footer .links a {
+        color: #ccc;
+        margin-right: 15px;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    
+    .ash-footer .links a:hover {
+        color: #007bff;
+    }
     
