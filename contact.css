@@ -13,8 +13,8 @@
         height: 100vh;
     }
     
-    .container {
-        background-color: white;
+    .container1 {
+        background-color: rgb(245, 244, 244);
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
